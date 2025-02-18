@@ -1,7 +1,7 @@
 # ROS1 Noetic
 ### Environment setup
 - Ubuntu 20.04 Focal Fossa [iso](https://releases.ubuntu.com/focal/) | [wsl](https://apps.microsoft.com/detail/9mttcl66cpxj?hl=en-US&gl=US)
-- ROS1 Noetic [install](https://wiki.ros.org/noetic/Installation/Ubuntu)
+- ROS1 Noetic [install](https://wiki.ros.org/noetic/Installation/Ubuntu) (install till 1.4 and follow the below commands)
 
 ### Dependencies installation
 1. ROS Noetic

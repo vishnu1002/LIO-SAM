@@ -11,7 +11,7 @@ struct VelodynePointXYZIRT
 } EIGEN_ALIGN16;
 POINT_CLOUD_REGISTER_POINT_STRUCT (VelodynePointXYZIRT,
     (float, x, x) (float, y, y) (float, z, z) (float, intensity, intensity)
-    (uint16_t, ring, ring) (float, time, time)
+    (std::uint16_t, ring, ring) (float, time, time)
 )
 
 struct OusterPointXYZIRT {
@@ -26,8 +26,8 @@ struct OusterPointXYZIRT {
 } EIGEN_ALIGN16;
 POINT_CLOUD_REGISTER_POINT_STRUCT(OusterPointXYZIRT,
     (float, x, x) (float, y, y) (float, z, z) (float, intensity, intensity)
-    (uint32_t, t, t) (uint16_t, reflectivity, reflectivity)
-    (uint8_t, ring, ring) (uint16_t, noise, noise) (uint32_t, range, range)
+    (std::uint32_t, t, t) (std::uint16_t, reflectivity, reflectivity)
+    (std::uint8_t, ring, ring) (std::uint16_t, noise, noise) (std::uint32_t, range, range)
 )
 
 // Use the Velodyne point format as a common representation

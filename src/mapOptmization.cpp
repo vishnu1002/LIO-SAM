@@ -362,8 +362,13 @@ public:
       else saveMapDirectory = std::getenv("HOME") + req.destination;
       cout << "Save destination: " << saveMapDirectory << endl;
       // create directory and remove old files;
-      int unused = system((std::string("exec rm -r ") + saveMapDirectory).c_str());
-      unused = system((std::string("mkdir -p ") + saveMapDirectory).c_str());
+      if (system((std::string("exec rm -r ") + saveMapDirectory).c_str()) != 0) {
+          ROS_WARN("Failed to remove directory: %s", saveMapDirectory.c_str());
+      }
+      if (system((std::string("mkdir -p ") + saveMapDirectory).c_str()) != 0) {
+          ROS_ERROR("Failed to create directory: %s", saveMapDirectory.c_str());
+          return false;
+      }
       // save key frame transformations
       pcl::io::savePCDFileBinary(saveMapDirectory + "/trajectory.pcd", *cloudKeyPoses3D);
       pcl::io::savePCDFileBinary(saveMapDirectory + "/transformations.pcd", *cloudKeyPoses6D);
@@ -1738,7 +1743,7 @@ public:
         static int lastSLAMInfoPubSize = -1;
         if (pubSLAMInfo.getNumSubscribers() != 0)
         {
-            if (lastSLAMInfoPubSize != cloudKeyPoses6D->size())
+            if (lastSLAMInfoPubSize != static_cast<int>(cloudKeyPoses6D->size()))
             {
                 lio_sam::cloud_info slamInfo;
                 slamInfo.header.stamp = timeLaserInfoStamp;

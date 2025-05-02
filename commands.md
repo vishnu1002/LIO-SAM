@@ -18,6 +18,8 @@ For a quick and automated installation, you can use the provided installation sc
 
 ```bash
 # Download the install.sh script to your workspace root
+curl -o install.sh https://raw.githubusercontent.com/vishnu1002/LIO-SAM/master/install.sh
+
 # Make it executable
 chmod +x install.sh
 

@@ -7,7 +7,7 @@
 - [2. LIO-SAM ROS 2](#2-lio-sam-ros-2)
   - [Setup Ubuntu 22.04 Jammy Jellyfish](#setup-ubuntu-2204-jammy-jellyfish)
   - [Setup ROS 2](#setup-ros-2)
-- Dataset [link](https://drive.google.com/drive/folders/1nU2QaPu0172DG_03LlEZBaHeRXACY1eU?usp=sharing)
+- Dataset: [link](https://drive.google.com/drive/folders/1nU2QaPu0172DG_03LlEZBaHeRXACY1eU?usp=sharing)
 
 ## 1. LIOSAM ROS 
 
@@ -93,6 +93,18 @@ roslaunch lio_sam run.launch
 rosbag play bag.bag -r 3
 ```
 
+### Quick Install Script
+You can automate the above installation and build steps using the provided script:
+
+```bash
+curl -o install_ros1.sh https://raw.githubusercontent.com/vishnu1002/LIO-SAM/master/install_ros1.sh
+
+chmod +x install_ros1.sh
+./install_ros1.sh
+```
+
+---
+
 ### Troubleshooting (ROS1)
 
 #### Common Issues
@@ -113,7 +125,14 @@ rosbag play bag.bag -r 3
    - Check ROS and package versions
    - Verify all dependencies are installed
 
+#### RViz2 Configuration
+
+- Set **Fixed Frame** to `rslidar` (or the appropriate frame_id)
+- Add a **PointCloud2** display and set topic to `/rslidar_points`
+
+
 ---
+
 
 ## 2. LIO-SAM ROS 2
 
@@ -227,3 +246,14 @@ ros2 topic list
 
 - Set **Fixed Frame** to `rslidar` (or the appropriate frame_id)
 - Add a **PointCloud2** display and set topic to `/rslidar_points`
+
+
+### Quick Install Script for ROS 2
+Automate the above installation and build. Make sure you do this in root directory.
+
+```bash
+curl -o install_ros2.sh https://raw.githubusercontent.com/vishnu1002/LIO-SAM/master/install_ros2.sh
+
+chmod +x install_ros2.sh
+./install_ros2.sh
+```

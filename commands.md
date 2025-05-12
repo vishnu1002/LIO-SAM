@@ -2,7 +2,7 @@
 
 ### Setup Ubuntu 20.04 Focal Fossa
 
-- Ubuntu 20.04 | WSL  
+- Ubuntu 20.04 | WSL [setup](https://github.com/vishnu1002/cmd-help/blob/main/wsl--help.md)
 
 ### Setup ROS 
 
@@ -108,7 +108,7 @@ rosbag play bag.bag -r 3
 
 ### Setup Ubuntu 22.04 Jammy Jellyfish
 
-- Ubuntu 22.04 | WSL  
+- Ubuntu 22.04 | WSL [setup](https://github.com/vishnu1002/cmd-help/blob/main/wsl--help.md)
 
 ### Setup ROS 2
 

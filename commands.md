@@ -3,10 +3,13 @@
 - [1. LIOSAM ROS](#1-liosam-ros)
   - [Setup Ubuntu 20.04 Focal Fossa](#setup-ubuntu-2004-focal-fossa)
   - [Setup ROS](#setup-ros)
+  - [ROS 1 Quick Install Script](#ros-1-quick-install-script)
 
 - [2. LIO-SAM ROS 2](#2-lio-sam-ros-2)
   - [Setup Ubuntu 22.04 Jammy Jellyfish](#setup-ubuntu-2204-jammy-jellyfish)
   - [Setup ROS 2](#setup-ros-2)
+  - [ROS 2 Quick Install Script](#ros-2-quick-install-script)
+
 - Dataset: [link](https://drive.google.com/drive/folders/1nU2QaPu0172DG_03LlEZBaHeRXACY1eU?usp=sharing)
 
 ## 1. LIOSAM ROS 
@@ -93,7 +96,7 @@ roslaunch lio_sam run.launch
 rosbag play bag.bag -r 3
 ```
 
-### Quick Install Script
+### ROS 1 Quick Install Script
 You can automate the above installation and build steps using the provided script:
 
 ```bash
@@ -248,7 +251,7 @@ ros2 topic list
 - Add a **PointCloud2** display and set topic to `/rslidar_points`
 
 
-### Quick Install Script for ROS 2
+### ROS 2 Quick Install Script
 Automate the above installation and build. Make sure you do this in root directory.
 
 ```bash

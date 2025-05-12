@@ -1,4 +1,4 @@
-# Visualizing Point Cloud in RViz2 (Without LIOSAM)
+# Visualize without LIOSAM in RViz2
 
 This guide explains how to visualize point cloud data from a ROS 2 bag file in RViz2, without using LIOSAM.
 

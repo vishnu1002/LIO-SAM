@@ -3,7 +3,7 @@
 This guide explains how to visualize point cloud data from a ROS 2 bag file in RViz2, without using LIOSAM.
 
 ## Prerequisites
-- Ubuntu 22 Jammy Jellyfish | WSL setup
+- Ubuntu 22 Jammy Jellyfish | WSL [setup](https://github.com/vishnu1002/cmd-help/blob/main/wsl--help.md)
 - ROS 2 Humble [here](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 - `.db3` pointcloud data [here](https://drive.google.com/drive/folders/1nU2QaPu0172DG_03LlEZBaHeRXACY1eU?usp=sharing)
 

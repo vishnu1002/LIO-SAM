@@ -5,7 +5,7 @@ This guide explains how to visualize point cloud data from a ROS 2 bag file in R
 ## Prerequisites
 - Ubuntu 22 Jammy Jellyfish | WSL setup
 - ROS 2 Humble [here](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
-- `.db3` pointcloud data [here]()
+- `.db3` pointcloud data [here](https://drive.google.com/drive/folders/1nU2QaPu0172DG_03LlEZBaHeRXACY1eU?usp=sharing)
 
 ## Steps
 

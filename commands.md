@@ -204,7 +204,7 @@ ros2 launch lio_sam run.launch.py
 ```bash
 ros2 bag play your-bag.bag
 ```
-#### Method 2: Visualize without LIOSAM
+#### Method 2: Visualize without LIOSAM [detailed](ros2viz.md)
 
 If you only have point cloud data without IMU, you can still visualize it:
 

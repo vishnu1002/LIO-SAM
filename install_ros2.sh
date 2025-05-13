@@ -39,7 +39,7 @@ sudo apt install -y libgtsam-dev libgtsam-unstable-dev
 # Set up ROS2 workspace
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
-git clone https://github.com/vishnu1002/LIO-SAM.git
+git clone https://github.com/TixiaoShan/LIO-SAM.git
 cd LIO-SAM
 git checkout ros2
 cd ~/ros2_ws
